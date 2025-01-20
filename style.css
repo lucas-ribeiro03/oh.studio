@@ -1,0 +1,143 @@
+:root {
+  --primary: #fff;
+  --letters: #000;
+  --secoundary: #e8e5e480;
+  --letters-gray: #7f7f7f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+  gap: 120px;
+}
+
+nav {
+  width: 266px;
+  background-color: var(--secoundary);
+  border-radius: 50px;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 12px 12px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 111111;
+  opacity: 1;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--letters);
+  padding: 8px 20px;
+  border-radius: 50px;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 120px;
+}
+
+header .header-title {
+  font-size: 1.7em;
+  padding: 30px 320px;
+}
+
+header .header-p {
+  display: flex;
+  gap: 32px;
+  font-size: 14px;
+  justify-content: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 650px 650px;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+main img {
+  width: 640px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: ease 0.6s;
+  clip-path: inset(0);
+}
+
+main video {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: ease 0.6s;
+  clip-path: inset(0);
+}
+
+main img:hover {
+  filter: blur(0.4em);
+}
+
+main video:hover {
+  filter: blur(0.4em);
+}
+
+.lwt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8em;
+}
+
+.lwt a {
+  color: var(--letters-gray);
+  text-decoration: none;
+}
+
+.lwt a:hover {
+  color: #b9b7b7;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.social {
+  display: flex;
+  gap: 18px;
+}
+
+.social p a {
+  text-decoration: none;
+  color: var(--letters);
+}
+
+.social p a:hover {
+  color: var(--letters-gray);
+}
