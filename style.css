@@ -73,6 +73,18 @@ nav ul li a.active {
   background-color: #fff;
 }
 
+nav ul li a.home-active {
+  background-color: var(--primary);
+}
+
+nav ul li a.profile-active {
+  background-color: var(--primary);
+}
+
+nav ul li a.contact-active {
+  background-color: var(--primary);
+}
+
 header {
   display: flex;
   flex-direction: column;
