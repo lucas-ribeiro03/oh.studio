@@ -105,7 +105,7 @@ header .header-p {
   justify-content: center;
 }
 
-main {
+.home-main {
   display: grid;
   grid-template-columns: 650px 650px;
   gap: 20px;
@@ -113,7 +113,7 @@ main {
   padding: 30px 0;
 }
 
-main img {
+.home-main img {
   width: 640px;
   border-radius: 12px;
   cursor: pointer;
@@ -121,7 +121,7 @@ main img {
   clip-path: inset(0);
 }
 
-main video {
+.home-main video {
   width: 100%;
   border-radius: 12px;
   cursor: pointer;
@@ -129,11 +129,11 @@ main video {
   clip-path: inset(0);
 }
 
-main img:hover {
+.home-main img:hover {
   filter: blur(0.4em);
 }
 
-main video:hover {
+.home-main video:hover {
   filter: blur(0.4em);
 }
 
@@ -172,4 +172,148 @@ footer {
 
 .social p a:hover {
   color: var(--letters-gray);
+}
+
+.header h1 {
+  margin: 215px;
+  font-size: 4em;
+  font-weight: 500;
+}
+
+.header-images {
+  display: flex;
+  justify-content: center;
+  gap: 21px;
+}
+
+.header-images img {
+  width: 580px;
+  border-radius: 9px;
+}
+
+.about {
+  text-align: center;
+  position: relative;
+}
+
+.about-p {
+  background-color: var(--secoundary);
+  padding: 6px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+  width: 100px;
+  border-radius: 25px;
+}
+
+.about h2 {
+  padding: 48px 350px;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.experience-top {
+  text-align: center;
+  position: relative;
+}
+
+.experience-p {
+  background-color: var(--secoundary);
+  padding: 6px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 150px;
+  border-radius: 25px;
+}
+
+.experience-top h2 {
+  padding: 48px 350px;
+}
+
+.experiences-container {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.from-to {
+  color: var(--letters-gray);
+}
+
+.company {
+  font-weight: bold;
+  font-size: 24px;
+}
+.function {
+  color: var(--letters-gray);
+}
+
+.position {
+  background-color: var(--secoundary);
+  border-radius: 15px;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+}
+
+.clients {
+  text-align: center;
+  position: relative;
+  margin-top: 100px;
+}
+
+.clients-p {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--secoundary);
+  width: 100px;
+  border-radius: 25px;
+  padding: 6px;
+}
+
+.clients h2 {
+  padding: 48px 350px;
+}
+
+.clients-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  overflow-x: hidden;
+}
+
+.lwt-contact {
+  margin: auto auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.lwt-contact p {
+  font-size: 4.5em;
+}
+
+.lwt-contact a {
+  font-size: 4.5em;
+  text-decoration: none;
+  color: var(--letters-gray);
+}
+
+.lwt-contact a:hover {
+  color: #b9b7b7;
 }
