@@ -10,11 +10,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const url = window.location.pathname;
   const urlSliced = url.slice(0, -5);
   const urlItem = urlSliced.slice(1);
-  console.log(urlItem);
 
   navItems.forEach((item) => {
     const itemContent = item.textContent;
     if (urlItem === itemContent.toLowerCase()) {
+      item.classList.add(`${itemContent.toLowerCase()}-active`);
+    }
+
+    if (urlItem === "index" && item.textContent == "Home") {
       item.classList.add(`${itemContent.toLowerCase()}-active`);
     }
   });
